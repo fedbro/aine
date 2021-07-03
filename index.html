@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+    body{
+        background-color:white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight:400;
+        font-size:12px;
+      }
+      .nav{
+        background-color:white;
+       
+        box-shadow: 1px 2px 15px #d3d3d3;
+  
+    height: 50px;
+    padding: 20px;
+    position: relative;
+      }
+      .container{
+          margin: 1rem auto;
+          width: 100%;
+      }
+      .content{
+       
+          padding: 20px;
+      }
+
+      .card{
+        display: flex;
+        flex-direction: row;
+        background-color:white;
+        margin: 2rem auto;
+        margin-top:100px;
+        width:90%;
+        height:90vh;
+        box-shadow: 1px 2px 15px #d3d3d3;
+        border-radius:2px;
+      }
+      .verticalTabs {
+    box-shadow: 1px 2px 15px #d3d3d3;
+}
+      .logo{
+         width:80px;
+        height:50px;
+        padding: 20px;
+        position: relative;
+      }
+      .logo img {
+    margin-top: 0;
+    position: absolute;
+    top: 0;
+}
+      .tabHeader {
+    padding: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+    justify-content: center;
+      }
+      
+      .active{
+        position:relative;
+        z-index:50;
+      
+        background-color:#d9e4f7;
+        -webkit-transition: all .3s ease-in-out;
+        transition: all .3s ease-in-out;
+        border-left:2px solid rgb(80, 80, 172);
+      }
+      
+      .tabText{
+        position: absolute;
+    color: rgb(155, 155, 206);
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+    align-items: center;
+        
+      }
+    
+      .tabText img{
+          width: 30px;
+          align-items: center;
+      }
+      .right{
+          width: 100%;
+          position: relative;
+          background-color: whitesmoke;
+      }
+    
+      
+      .tabTitle{
+        font-size:20px;
+        font-weight:600;
+        padding:0 0 20px 0;
+      }
+      .title {
+    color: rgb(155, 155, 206);
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+.title  h3{
+    font-weight: 500;
+    font-size: 24px;
+}
+i.ri-arrow-left-s-fill {
+    font-size: 24px;
+}
+input[type=text], select {
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+  box-shadow: 1px 2px 15px #d3d3d3;
+}
+.upload-image {
+    width: 90%;
+    margin-left: 15vh;
+ 
+    height: 100px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    padding: 10px;
+}
+button {
+    background-color: white;
+    height: 150px;
+    border: 0;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: 800;
+    box-shadow: 1px 2px 10px #ebe9e9;
+}
+.upload-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    width: 90%;
+    align-items: flex-end;
+}
+.upload-container h3{
+    align-self:center;
+}
+      </style>
+</head>
+<body>
+    <div class="tab-wrapper container">
+        <div class="card">
+          <div class="verticalTabs">
+             <div class="logo"><img src="./image/logo.PNG"> </div>
+            <div class="tabHeader ">
+            <div class="tabText">
+                <i class="ri-user-6-line"></i>
+                <label>Students</label>
+            </div>
+          </div>
+            <div class="tabHeader active">
+                <div class="tabText">
+                <i class="ri-book-2-line"></i>
+                <label>Lesson Plan</label>
+          </div>
+        </div>
+        <div class="tabHeader">
+            <div class="tabText">
+                <i class="ri-settings-2-line"></i>
+            <label>Settings</label>
+      </div>
+    </div>
+          
+          </div>
+          <div class ="right">
+            <div class="nav"></div>
+           <div class="">
+               <div class="content">
+               <div class="title">
+                <i class="ri-arrow-left-s-fill"></i>
+                   <h3>Video</h3></div>
+                   <div class="upload-container">
+                    <input type="text" id="" name="" placeholder="Insert URL here">
+                    <h3>or</h3>
+                  
+                   </div>
+                   <div class="upload-image"><button>Upload Image</button> </div>
+            </div>
+           </div>
+
+       
+          </div>
+        </div>
+        
+      </div>
+      
+</body>
+</html>
